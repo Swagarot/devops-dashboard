@@ -1,0 +1,106 @@
+    1  history -w
+    2  exit
+    3  sudo apt install -y ca-certificates curl
+    4  sudo install -m 0755 -d /etc/apt/keyrings
+    5  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+    6  sudo chmod a+r /etc/apt/keyrings/docker.asc
+    7  echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    8  sudo apt update
+    9  sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   10  sudo usermod -aG docker $USER
+   11  history 
+   12  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o /tmp/awscliv2.zip
+   13  sudo apt install -y unzip
+   14  unzip -o /tmp/awscliv2.zip -d /tmp/
+   15  sudo /tmp/aws/install
+   16  rm -rf /tmp/awscliv2.zip /tmp/aws
+   17  history 
+   18  unzip -o /tmp/awscliv2.zip -d /tmp/
+   19  sudo /tmp/aws/install
+   20  sudo apt install -y gnupg software-properties-common
+   21  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
+   22  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list > /dev/null
+   23  history 
+   24  sudo apt update
+   25  sudo apt install -y terraform
+   26  sudo apt autoremove -y
+   27  sudo apt clean
+   28  sudo reboot
+   29  git clone
+   30  git clone https://github.com/Swagarot/devops-dashboard devops-dashboard
+   31  ls
+   32  git remote -v
+   33  git remote -v 
+   34  cd devops-dashboard
+   35  git remote -v 
+   36  touch main.py
+   37  nano main.py
+   38  git add main.py
+   39  git commit -m "added main.py, a simple menu tool for checking system information"
+   40  git config --global user.name "Roye"
+   41  git commit -m "added main.py, a simple menu tool for checking system information"
+   42  git config --global user.email "ruthsus132@gmail.com"
+   43  git commit -m "added main.py, a simple menu tool for checking system information"
+   44  git push origin main'
+   45  git push origin main
+   46  git remove -v
+   47  git remote -v
+   48  git pull origin main
+   49  ls
+   50  nano main.py
+   51  cat main.py
+   52  python3 main.py
+   53  nano main.py
+   54  cat main.py
+   55  nano main.py
+   56  cat main.py
+   57  python3 main.py
+   58  nano main.py
+   59  cat main.py
+   60  python3 main.py
+   61  nano sysinfo.py
+   62  python3 main.py
+   63  nano main.py
+   64  python3 main.py
+   65  nano sysinfo.py
+   66* 
+   67  git add main.py
+   68  git add sysinfo.py
+   69  git commit -m "minor fixes in sysinfo.py and inegration of sysinfo.py into main.py"
+   70  nano main.py
+   71  python3 main.py
+   72  touch error_log.txt
+   73  nano error.log.txt
+   74  ls
+   75  rm error.log.txt
+   76  ls
+   77  nano error_log.txt
+   78  python3 main.py
+   79  nano error_log.txt
+   80  python3 main.py
+   81  git add main.py
+   82  git commit -m "intergration of logcheck.py into the main.py function"
+   83  nano main.py
+   84  it commit -m "intergration of tasklist.py into the main.py fucntion"
+   85  git add main.py
+   86  git commit -m "intergration of tasklist.py into the main.py fucntion"
+   87  git push origin main
+   88  git config --global user.name
+   89  git config --global user.email
+   90  ssh-keygen -t ed25519 -c "ruthsus132@gmail.com"
+   91  ssh-keygen -t ed25519 -C "ruthsus132@gmail.com"
+   92  cat ~/.ssh/id_ed25519.pub
+   93  ssh -T git@github.com
+   94  git remove -v
+   95  git remote -v
+   96  git remote set-url origin git@github.com:Swagarot/devops-dashboard.git
+   97  git remote -v
+   98  echo "SSH authentication enabled" >> README.md
+   99  git add README.md
+  100  git commit -m "switched to SSH authenticiation"
+  101  git push
+  102  git pull 
+  103  ls
+  104  cat README.md
+  105  history
+  106  history > history.txt
