@@ -1,5 +1,7 @@
 import sysinfo
 import logcheck
+import tasklist
+
 while True: 
  print("- [1] System Info")
  print("- [2] Log Checker")
@@ -13,7 +15,7 @@ while True:
   case 2:
    logcheck.check_log()
   case 3:
-   intput ("Coming soon")
+   tasklist.manage_tasks()
   case 0:
    input ("press enter to exit")
    break
