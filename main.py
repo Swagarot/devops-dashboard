@@ -1,5 +1,5 @@
 import sysinfo
-
+import logcheck
 while True: 
  print("- [1] System Info")
  print("- [2] Log Checker")
@@ -11,7 +11,7 @@ while True:
   case 1: 
    sysinfo.show_sysinfo()
   case 2:
-   input ("Coming soon")
+   logcheck.check_log()
   case 3:
    intput ("Coming soon")
   case 0:
